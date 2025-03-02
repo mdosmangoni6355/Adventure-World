@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ====== Navigation Section ====== */
+hr{
+    height: 5px;
+    width: 172px;
+    display: inline-block;
+    background: red;
+    border-radius: 5px;
+    border: none;
+}
+
+header{
+    background-image: url(../images/dawn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    z-index: 10; 
+}
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0); 
+    left: 0%;
+    right: 0%;
+    padding: 0px 5%;
+}
+
+.logo{
+    padding: 24px 0;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.logo a h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.logo a h5 span{
+    margin: -5px 0 0 0;
+    color: red;
+    font-weight: 100;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    transition: all 0.2s linear;
+    color: red;
+}
+
+/* ==== banner section ==== */
+.banner{
+    text-align: center;
+    padding: 200px 0 100px 0;
+   
+}
+.banner h4{
+    font-size: 25px;
+    font-style: italic;
+}
+.banner h1{
+    font-size: 68px;
+    margin: 10px 0 0 0;
+}
+
+.banner button{
+    margin: 30px 0 0 0;
+    background: red;
+    border: 1px solid red;
+    padding: 15px 30px;
+    border-radius:35px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+}
+
+.banner button:hover{
+    background: rgba(255, 0, 0, 0);
+    letter-spacing: 3px;
+   
+}
+
+/* === Event Section ===== */
+.event-main{
+    padding: 50px 14%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.event-main h3{
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+.event-item p{
+    margin: 20px 0 0 0;
+}
+.event-item a{
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: red;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+.event-item a:hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background: red;
+    border-radius: 35px;
+}
+
+.event{
+    display: flex;
+    margin: 30px 0 0 0;
+}
+.event-item{
+    width: 50%;
+    margin: 20px;
+}
+.event-item img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.event-item h5{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+/* === Explore Section ==== */
+.explore{
+    background-image: url(../images/father.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: rgba(0, 0, 255, 0.450);
+    background-blend-mode: multiply;
+    padding: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.explore-item{
+    width: 50%;
+}
+.explore-item h1{
+    text-transform: uppercase;
+    font-size: 72px;
+}
+.explore-item p{
+    margin: 30px 0 30px 0;
+}
+.explore-item a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.explore-item a:hover{
+    transition: all 0.3s ease;
+    color: red;
+}
+
+/* ==== Tour Section === */
+
+.tour-main{
+    padding: 5%;
+}
+.tour{
+    display: flex;
+    justify-content: space-between;
+}
+.tour-item{
+    width: 33%;
+    padding: 15px;
+}
+.tour-item h3{
+    font-size: 26px;
+    margin: 0 0 0px 0;
+}
+.tour-item p{
+    margin: 30px 0 30px 0;
+}
+.tour-item a{
+    text-decoration: none;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.img-one{
+    height: 280px;
+    margin: 0 0 25px 0;
+}
+.img-two{
+    height: 370px;
+    margin: 0 0 25px 0;
+}
+.tour img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+footer h1{
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
